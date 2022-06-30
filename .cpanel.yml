@@ -2,16 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/highcoli/public_html/
-    - /bin/rsync -av abstract/ $DEPLOYPATH
-    - /bin/rsync -av assets/ $DEPLOYPATH
-    - /bin/rsync -av committe/ $DEPLOYPATH
-    - /bin/rsync -av css/ $DEPLOYPATH
-    - /bin/rsync -av faq/ $DEPLOYPATH
-    - /bin/rsync -av fonts/ $DEPLOYPATH
-    - /bin/rsync -av images/ $DEPLOYPATH
-    - /bin/rsync -av js/ $DEPLOYPATH
-    - /bin/rsync -av request/ $DEPLOYPATH
-    - /bin/rsync -av side-events/ $DEPLOYPATH
-    - /bin/rsync -av travel/ $DEPLOYPATH
-    - /bin/rsync -av tribute/ $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
